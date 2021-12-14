@@ -8,7 +8,7 @@ namespace FizzBuzz_Kata
         {
             while (true)
             {
-                PrintMenu();
+                MenuHelper.PrintMenu();
 
                 switch (ReadChoice())
                 {
@@ -52,21 +52,6 @@ namespace FizzBuzz_Kata
 
                 Console.WriteLine("The choice must be a number. Please, try again: ");
             }
-        }
-
-        private static void PrintMenu()
-        {
-            Console.Clear();
-            Console.WriteLine("-------------------------------- ");
-            Console.WriteLine("|---- Choose the challenges ----|");
-            Console.WriteLine("-------------------------------- ");
-            Console.WriteLine("| 1 - FizzBuzz                  |");
-            Console.WriteLine("| 2 - SumOfTwoNumbers           |");
-            Console.WriteLine("| 3 - ConvertMinutesintoSeconds |");
-            Console.WriteLine("| 4 - NextNumberInteger         |");
-            Console.WriteLine("| 5 - CalculatedPower           |");
-            Console.WriteLine("| 6 - Exit                      |");
-            Console.Write("-------------------------------- \n >>> ");
         }
     }
 }
