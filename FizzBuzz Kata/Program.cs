@@ -15,7 +15,8 @@ namespace FizzBuzz_Kata
             {
                 PrintMenu();
 
-                choice = int.Parse(Console.ReadLine());
+                choice = ReadChoice();
+
                 if (choice == 1)
                 {
                     Console.Clear();
@@ -43,6 +44,22 @@ namespace FizzBuzz_Kata
                 }
 
             } while (choice != 6);
+        }
+
+        private static int ReadChoice()
+        {
+            while (true)
+            {
+                var input = Console.ReadLine();
+                input = input.Trim();
+
+                if (int.TryParse(input, out var choice))
+                {
+                    return choice;
+                }
+
+                Console.WriteLine("The choice must be a number. Please, try again: ");
+            }
         }
 
         private static void PrintMenu()
