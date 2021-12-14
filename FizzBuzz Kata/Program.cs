@@ -13,17 +13,7 @@ namespace FizzBuzz_Kata
         
             do
             {
-                Console.Clear();
-                Console.WriteLine("-------------------------------- ");
-                Console.WriteLine("|---- Choose the challenges ----|");
-                Console.WriteLine("-------------------------------- ");
-                Console.WriteLine("| 1 - FizzBuzz                  |");
-                Console.WriteLine("| 2 - SumOfTwoNumbers           |");
-                Console.WriteLine("| 3 - ConvertMinutesintoSeconds |");
-                Console.WriteLine("| 4 - NextNumberInteger         |");
-                Console.WriteLine("| 5 - CalculatedPower           |");
-                Console.WriteLine("| 6 - Exit                      |");
-                Console.Write("-------------------------------- \n >>> ");
+                PrintMenu();
 
                 choice = int.Parse(Console.ReadLine());
                 if (choice == 1)
@@ -34,7 +24,7 @@ namespace FizzBuzz_Kata
                 else if (choice == 2)
                 {
                     Console.Clear();
-                    exercisesWithNumbers.ReturnTheSumOfTwoNumbers(); 
+                    exercisesWithNumbers.ReturnTheSumOfTwoNumbers();
                 }
                 else if (choice == 3)
                 {
@@ -51,8 +41,23 @@ namespace FizzBuzz_Kata
                     Console.Clear();
                     exercisesWithNumbers.CircuitPower();
                 }
- 
+
             } while (choice != 6);
+        }
+
+        private static void PrintMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("-------------------------------- ");
+            Console.WriteLine("|---- Choose the challenges ----|");
+            Console.WriteLine("-------------------------------- ");
+            Console.WriteLine("| 1 - FizzBuzz                  |");
+            Console.WriteLine("| 2 - SumOfTwoNumbers           |");
+            Console.WriteLine("| 3 - ConvertMinutesintoSeconds |");
+            Console.WriteLine("| 4 - NextNumberInteger         |");
+            Console.WriteLine("| 5 - CalculatedPower           |");
+            Console.WriteLine("| 6 - Exit                      |");
+            Console.Write("-------------------------------- \n >>> ");
         }
     }
 }
