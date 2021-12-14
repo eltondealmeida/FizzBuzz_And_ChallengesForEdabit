@@ -7,7 +7,7 @@ namespace FizzBuzz_Kata
     {
         static void Main(string[] args)
         {
-            int choose;
+            int choice;
             FizzBuzz fizz = new FizzBuzz();
             ExercisesWithNumbers exercisesWithNumbers = new ExercisesWithNumbers();
         
@@ -25,34 +25,34 @@ namespace FizzBuzz_Kata
                 Console.WriteLine("| 6 - Exit                      |");
                 Console.Write("-------------------------------- \n >>> ");
 
-                choose = int.Parse(Console.ReadLine());
-                if (choose == 1)
+                choice = int.Parse(Console.ReadLine());
+                if (choice == 1)
                 {
                     Console.Clear();
                     fizz.fizzBuzz();
                 }
-                else if (choose == 2)
+                else if (choice == 2)
                 {
                     Console.Clear();
                     exercisesWithNumbers.ReturnTheSumOfTwoNumbers(); 
                 }
-                else if (choose == 3)
+                else if (choice == 3)
                 {
                     Console.Clear();
                     exercisesWithNumbers.ConvertMinutesIntoSeconds();
                 }
-                else if (choose == 4)
+                else if (choice == 4)
                 {
                     Console.Clear();
                     exercisesWithNumbers.ReturTheNextNumberFromTheIntegerPassed();
                 }
-                else if (choose == 5)
+                else if (choice == 5)
                 {
                     Console.Clear();
                     exercisesWithNumbers.CircuitPower();
                 }
  
-            } while (choose != 6);
+            } while (choice != 6);
         }
     }
 }
