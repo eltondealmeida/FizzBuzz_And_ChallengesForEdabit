@@ -8,7 +8,7 @@ namespace FizzBuzz_Kata
 {
     class FizzBuzz
     {
-        public void fizzBuzz()
+        public void Run()
         {
             Console.WriteLine("Method that prints the numbers from 1 to 100, separated by newlines.\n" +
              "Instead of numbers divisible by 3, the method returns 'Fizz'.\n" +

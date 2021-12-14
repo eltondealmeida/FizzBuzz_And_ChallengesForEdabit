@@ -1,5 +1,4 @@
 ﻿using System;
-using FizzBuzz_Kata;
 
 namespace FizzBuzz_Kata
 {
@@ -14,7 +13,7 @@ namespace FizzBuzz_Kata
                 switch (ReadChoice())
                 {
                     case 1:
-                        new FizzBuzz().fizzBuzz();
+                        new FizzBuzz().Run();
                         break;
 
                     case 2:
