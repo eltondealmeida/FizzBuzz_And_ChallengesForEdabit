@@ -21,7 +21,7 @@ namespace FizzBuzz_Kata
             int sum = a + b;
             Console.WriteLine("\nSum of the: [" + a + "] and [" + b + "] is equal to: " + sum);
 
-            MenuHelper.PrintMenu();
+            MenuHelper.ShowReturnToMenuOption();
         }
 
         public void ConvertMinutesIntoSeconds()
@@ -39,7 +39,7 @@ namespace FizzBuzz_Kata
             int seconds = minutes * 60;
             Console.WriteLine("\nThe minute(s): [" + minutes + "] is (are) equal to: [" + seconds + "] Seconds.");
 
-            MenuHelper.PrintMenu();
+            MenuHelper.ShowReturnToMenuOption();
         }
 
         public void ReturTheNextNumberFromTheIntegerPassed()
@@ -57,7 +57,7 @@ namespace FizzBuzz_Kata
             int sum = number + 1;
             Console.WriteLine("The number: [" + number + "] + 1 is equal to: " + sum);
 
-            MenuHelper.PrintMenu();
+            MenuHelper.ShowReturnToMenuOption();
         }
 
         public void CircuitPower()
@@ -77,7 +77,7 @@ namespace FizzBuzz_Kata
             int multiply = voltage * current;
             Console.WriteLine("\nCalculated power of the voltage: [" + voltage + "] and current: [" + current + "] is equal to: " + multiply);
 
-            MenuHelper.PrintMenu();
+            MenuHelper.ShowReturnToMenuOption();
         }
     }
 }

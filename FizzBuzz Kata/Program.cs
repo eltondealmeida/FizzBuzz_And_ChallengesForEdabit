@@ -45,12 +45,17 @@ namespace FizzBuzz_Kata
                 var input = Console.ReadLine();
                 input = input.Trim();
 
-                if (int.TryParse(input, out var choice))
+                if (int.TryParse(input, out var choice) && int.Parse(input) <= 6)
                 {
                     return choice;
                 }
-
-                Console.WriteLine("The choice must be a number. Please, try again: ");
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Please select one of the menu options. Please, try again.");
+                    MenuHelper.ShowReturnToMenuOption();
+                    MenuHelper.PrintMenu();
+                }
             }
         }
     }

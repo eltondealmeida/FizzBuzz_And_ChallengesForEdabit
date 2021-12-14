@@ -21,7 +21,8 @@ namespace FizzBuzz_Kata
 
         public static void ShowReturnToMenuOption()
         {
-            Console.WriteLine("\n\nPress enter to return to the menu.");
+            Console.WriteLine("\n\n--------------------------------");
+            Console.WriteLine("Press enter to return to the menu.");
             Console.ReadLine();
         }
     }
