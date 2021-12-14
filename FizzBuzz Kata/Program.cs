@@ -17,19 +17,19 @@ namespace FizzBuzz_Kata
                         break;
 
                     case 2:
-                        new ExercisesWithNumbers().ReturnTheSumOfTwoNumbers();
+                        new ReturnTheSumOfTwoNumbers().Run();
                         break;
 
                     case 3:
-                        new ExercisesWithNumbers().ConvertMinutesIntoSeconds();
+                        new ConvertMinutesIntoSeconds().Run();
                         break;
 
                     case 4:
-                        new ExercisesWithNumbers().ReturTheNextNumberFromTheIntegerPassed();
+                        new ReturTheNextNumberFromTheIntegerPassed().Run();
                         break;
 
                     case 5:
-                        new ExercisesWithNumbers().CircuitPower();
+                        new CircuitPower().Run();
                         break;
 
                     default:
