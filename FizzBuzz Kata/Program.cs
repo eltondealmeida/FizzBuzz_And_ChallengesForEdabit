@@ -7,43 +7,36 @@ namespace FizzBuzz_Kata
     {
         static void Main(string[] args)
         {
-            int choice;
-            var fizz = new FizzBuzz();
-            var exercisesWithNumbers = new ExercisesWithNumbers();
-        
-            do
+            while (true)
             {
                 PrintMenu();
 
-                choice = ReadChoice();
+                switch (ReadChoice())
+                {
+                    case 1:
+                        new FizzBuzz().fizzBuzz();
+                        break;
 
-                if (choice == 1)
-                {
-                    Console.Clear();
-                    fizz.fizzBuzz();
-                }
-                else if (choice == 2)
-                {
-                    Console.Clear();
-                    exercisesWithNumbers.ReturnTheSumOfTwoNumbers();
-                }
-                else if (choice == 3)
-                {
-                    Console.Clear();
-                    exercisesWithNumbers.ConvertMinutesIntoSeconds();
-                }
-                else if (choice == 4)
-                {
-                    Console.Clear();
-                    exercisesWithNumbers.ReturTheNextNumberFromTheIntegerPassed();
-                }
-                else if (choice == 5)
-                {
-                    Console.Clear();
-                    exercisesWithNumbers.CircuitPower();
-                }
+                    case 2:
+                        new ExercisesWithNumbers().ReturnTheSumOfTwoNumbers();
+                        break;
 
-            } while (choice != 6);
+                    case 3:
+                        new ExercisesWithNumbers().ConvertMinutesIntoSeconds();
+                        break;
+
+                    case 4:
+                        new ExercisesWithNumbers().ReturTheNextNumberFromTheIntegerPassed();
+                        break;
+
+                    case 5:
+                        new ExercisesWithNumbers().CircuitPower();
+                        break;
+
+                    default:
+                        return;
+                }
+            }
         }
 
         private static int ReadChoice()
