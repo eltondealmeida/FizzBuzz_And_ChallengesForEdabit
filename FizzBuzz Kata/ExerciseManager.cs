@@ -15,6 +15,12 @@ namespace FizzBuzz_Kata
             knownExercises.Add(code, exerciseType);
         }
 
+        public void AddExercise<TExercise>(int code)
+            where TExercise : IExercise
+        {
+            knownExercises.Add(code, typeof(TExercise));
+        }
+
         public bool RunExerciseIfCodeIsValid(int code)
         {
             if (!knownExercises.ContainsKey(code))

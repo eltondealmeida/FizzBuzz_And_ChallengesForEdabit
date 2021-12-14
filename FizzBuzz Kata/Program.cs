@@ -7,11 +7,11 @@ namespace FizzBuzz_Kata
         static void Main()
         {
             var manager = new ExerciseManager();
-            manager.AddExercise(1, typeof(FizzBuzzExercise));
-            manager.AddExercise(2, typeof(ReturnTheSumOfTwoNumbersExercise));
-            manager.AddExercise(3, typeof(ConvertMinutesIntoSecondsExercise));
-            manager.AddExercise(4, typeof(ReturTheNextNumberFromTheIntegerPassedExercise));
-            manager.AddExercise(5, typeof(CircuitPowerExercise));
+            manager.AddExercise<FizzBuzzExercise>(1);
+            manager.AddExercise<ReturnTheSumOfTwoNumbersExercise>(2);
+            manager.AddExercise<ConvertMinutesIntoSecondsExercise>(3);
+            manager.AddExercise<ReturTheNextNumberFromTheIntegerPassedExercise>(4);
+            manager.AddExercise<CircuitPowerExercise>(5);
 
             while (true)
             {
