@@ -8,8 +8,8 @@ namespace FizzBuzz_Kata
         static void Main(string[] args)
         {
             int choice;
-            FizzBuzz fizz = new FizzBuzz();
-            ExercisesWithNumbers exercisesWithNumbers = new ExercisesWithNumbers();
+            var fizz = new FizzBuzz();
+            var exercisesWithNumbers = new ExercisesWithNumbers();
         
             do
             {
