@@ -2,7 +2,7 @@
 
 namespace FizzBuzz_Kata
 {
-    public class FizzBuzz : IExercise
+    public class FizzBuzzExercise : IExercise
     {
         public void Run()
         {

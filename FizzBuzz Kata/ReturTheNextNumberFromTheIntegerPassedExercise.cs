@@ -2,7 +2,7 @@
 
 namespace FizzBuzz_Kata
 {
-    public class ReturTheNextNumberFromTheIntegerPassed : IExercise
+    public class ReturTheNextNumberFromTheIntegerPassedExercise : IExercise
     {
         public void Run()
         {

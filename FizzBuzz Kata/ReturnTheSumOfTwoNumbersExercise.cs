@@ -2,7 +2,7 @@
 
 namespace FizzBuzz_Kata
 {
-    public class ReturnTheSumOfTwoNumbers : IExercise
+    public class ReturnTheSumOfTwoNumbersExercise : IExercise
     {
         public void Run()
         {

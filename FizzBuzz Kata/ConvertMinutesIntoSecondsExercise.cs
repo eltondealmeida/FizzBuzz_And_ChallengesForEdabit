@@ -2,7 +2,7 @@
 
 namespace FizzBuzz_Kata
 {
-    public class ConvertMinutesIntoSeconds : IExercise
+    public class ConvertMinutesIntoSecondsExercise : IExercise
     {
         public void Run()
         {

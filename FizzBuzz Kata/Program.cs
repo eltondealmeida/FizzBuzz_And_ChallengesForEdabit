@@ -13,23 +13,23 @@ namespace FizzBuzz_Kata
                 switch (ReadChoice())
                 {
                     case 1:
-                        new FizzBuzz().Run();
+                        new FizzBuzzExercise().Run();
                         break;
 
                     case 2:
-                        new ReturnTheSumOfTwoNumbers().Run();
+                        new ReturnTheSumOfTwoNumbersExercise().Run();
                         break;
 
                     case 3:
-                        new ConvertMinutesIntoSeconds().Run();
+                        new ConvertMinutesIntoSecondsExercise().Run();
                         break;
 
                     case 4:
-                        new ReturTheNextNumberFromTheIntegerPassed().Run();
+                        new ReturTheNextNumberFromTheIntegerPassedExercise().Run();
                         break;
 
                     case 5:
-                        new CircuitPower().Run();
+                        new CircuitPowerExercise().Run();
                         break;
 
                     default:

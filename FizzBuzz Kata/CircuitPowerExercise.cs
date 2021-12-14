@@ -2,7 +2,7 @@
 
 namespace FizzBuzz_Kata
 {
-    public class CircuitPower : IExercise
+    public class CircuitPowerExercise : IExercise
     {
         public void Run()
         {
