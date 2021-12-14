@@ -2,7 +2,7 @@
 
 namespace FizzBuzz_Kata
 {
-    class ExercisesWithNumbers
+    public class ExercisesWithNumbers
     {
         public void ReturnTheSumOfTwoNumbers()
         {
