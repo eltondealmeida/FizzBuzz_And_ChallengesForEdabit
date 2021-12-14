@@ -12,6 +12,7 @@ namespace FizzBuzz_Kata
 
         public void AddExercise(int code, Type exerciseType)
         {
+            ThrowIfInvalidType(exerciseType);
             knownExercises.Add(code, exerciseType);
         }
 
@@ -37,6 +38,14 @@ namespace FizzBuzz_Kata
             var exerciseType = knownExercises[code];
             var instance = Activator.CreateInstance(exerciseType) as IExercise;
             instance.Run();
+        }
+
+        private void ThrowIfInvalidType(Type exerciseType)
+        {
+            if (!exerciseType.IsAssignableTo(typeof(IExercise)))
+            {
+                throw new InvalidOperationException($"Type {exerciseType.Name} does not implement interface IExercise.");
+            }
         }
     }
 }
