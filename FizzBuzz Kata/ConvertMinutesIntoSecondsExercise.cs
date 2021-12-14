@@ -18,8 +18,6 @@ namespace FizzBuzz_Kata
             int minutes = int.Parse(Console.ReadLine());
             int seconds = minutes * 60;
             Console.WriteLine("\nThe minute(s): [" + minutes + "] is (are) equal to: [" + seconds + "] Seconds.");
-
-            MenuHelper.PrintMenu();
         }
     }
 }

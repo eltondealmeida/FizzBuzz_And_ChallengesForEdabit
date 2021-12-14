@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace FizzBuzz_Kata
 {
     public class ExerciseManager
     {
         private readonly Dictionary<int, Type> knownExercises = new();
+
+        public IReadOnlyDictionary<int, Type> KnownExercises => new ReadOnlyDictionary<int, Type>(knownExercises);
 
         public void AddExercise(int code, Type exerciseType)
         {

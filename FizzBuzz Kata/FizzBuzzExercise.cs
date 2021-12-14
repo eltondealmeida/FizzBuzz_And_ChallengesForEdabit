@@ -33,8 +33,6 @@ namespace FizzBuzz_Kata
                 }
                 Console.WriteLine(result);
             }
-
-            MenuHelper.PrintMenu();
         }
     }
 }

@@ -20,8 +20,6 @@ namespace FizzBuzz_Kata
             int b = int.Parse(aux[1]);
             int sum = a + b;
             Console.WriteLine("\nSum of the: [" + a + "] and [" + b + "] is equal to: " + sum);
-
-            MenuHelper.PrintMenu();
         }
     }
 }

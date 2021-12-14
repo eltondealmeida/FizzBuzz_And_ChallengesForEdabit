@@ -4,18 +4,19 @@ namespace FizzBuzz_Kata
 {
     public static class MenuHelper
     {
-        public static void PrintMenu()
+        public static void PrintMenu(ExerciseManager exerciseManager)
         {
             Console.Clear();
             Console.WriteLine("-------------------------------- ");
-            Console.WriteLine("|---- Choose the challenges ----|");
+            Console.WriteLine("|----- Choose a challenge -----|");
             Console.WriteLine("-------------------------------- ");
-            Console.WriteLine("| 1 - FizzBuzz                  |");
-            Console.WriteLine("| 2 - SumOfTwoNumbers           |");
-            Console.WriteLine("| 3 - ConvertMinutesintoSeconds |");
-            Console.WriteLine("| 4 - NextNumberInteger         |");
-            Console.WriteLine("| 5 - CalculatedPower           |");
-            Console.WriteLine("| 6 - Exit                      |");
+
+            foreach (var entry in exerciseManager.KnownExercises)
+            {
+                Console.WriteLine($"| {entry.Key} - {entry.Value}");
+            }
+
+            Console.WriteLine("| ... Or type any other number to exit");
             Console.Write("-------------------------------- \n >>> ");
         }
 

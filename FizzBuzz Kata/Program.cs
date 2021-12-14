@@ -15,7 +15,7 @@ namespace FizzBuzz_Kata
 
             while (true)
             {
-                MenuHelper.PrintMenu();
+                MenuHelper.PrintMenu(manager);
 
                 var choice = ReadChoice();
                 var couldRunExercise = manager.RunExerciseIfCodeIsValid(choice);
@@ -24,6 +24,9 @@ namespace FizzBuzz_Kata
                 {
                     break;
                 }
+
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadLine();
             }
         }
 

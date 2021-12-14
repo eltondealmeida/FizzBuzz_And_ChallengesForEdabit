@@ -18,8 +18,6 @@ namespace FizzBuzz_Kata
             int number = int.Parse(Console.ReadLine());
             int sum = number + 1;
             Console.WriteLine("The number: [" + number + "] + 1 is equal to: " + sum);
-
-            MenuHelper.PrintMenu();
         }
     }
 }

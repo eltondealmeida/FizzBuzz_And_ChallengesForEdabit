@@ -20,8 +20,6 @@ namespace FizzBuzz_Kata
             int current = int.Parse(aux[1]);
             int multiply = voltage * current;
             Console.WriteLine("\nCalculated power of the voltage: [" + voltage + "] and current: [" + current + "] is equal to: " + multiply);
-
-            MenuHelper.PrintMenu();
         }
     }
 }
