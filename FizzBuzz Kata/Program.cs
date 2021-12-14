@@ -6,34 +6,23 @@ namespace FizzBuzz_Kata
     {
         static void Main()
         {
+            var manager = new ExerciseManager();
+            manager.AddExercise(1, typeof(FizzBuzzExercise));
+            manager.AddExercise(2, typeof(ReturnTheSumOfTwoNumbersExercise));
+            manager.AddExercise(3, typeof(ConvertMinutesIntoSecondsExercise));
+            manager.AddExercise(4, typeof(ReturTheNextNumberFromTheIntegerPassedExercise));
+            manager.AddExercise(5, typeof(CircuitPowerExercise));
+
             while (true)
             {
                 MenuHelper.PrintMenu();
 
-                switch (ReadChoice())
+                var choice = ReadChoice();
+                var couldRunExercise = manager.RunExerciseIfCodeIsValid(choice);
+
+                if (!couldRunExercise)
                 {
-                    case 1:
-                        new FizzBuzzExercise().Run();
-                        break;
-
-                    case 2:
-                        new ReturnTheSumOfTwoNumbersExercise().Run();
-                        break;
-
-                    case 3:
-                        new ConvertMinutesIntoSecondsExercise().Run();
-                        break;
-
-                    case 4:
-                        new ReturTheNextNumberFromTheIntegerPassedExercise().Run();
-                        break;
-
-                    case 5:
-                        new CircuitPowerExercise().Run();
-                        break;
-
-                    default:
-                        return;
+                    break;
                 }
             }
         }
