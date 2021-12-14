@@ -6,12 +6,7 @@ namespace FizzBuzz_Kata
     {
         static void Main()
         {
-            var manager = new ExerciseManager();
-            manager.AddExercise<FizzBuzzExercise>(1);
-            manager.AddExercise<ReturnTheSumOfTwoNumbersExercise>(2);
-            manager.AddExercise<ConvertMinutesIntoSecondsExercise>(3);
-            manager.AddExercise<ReturTheNextNumberFromTheIntegerPassedExercise>(4);
-            manager.AddExercise<CircuitPowerExercise>(5);
+            var manager = ExerciseManagerBuilder.ScanAssemblyAndBuild();
 
             while (true)
             {
